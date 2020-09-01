@@ -139,6 +139,18 @@
     background: #ffd658;
 }
 
+.register_style{
+    text-align: center;
+}
+
+.wrapper .form .sign-up-prompt a{
+    color:orange;
+}
+
+.wrapper .form .input_field p{
+    font-weight: bold;
+}
+
 @media (max-width: 420px){
     .wrapper .form .input_field{
         flex-direction: column;
