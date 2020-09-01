@@ -68,7 +68,7 @@
                     <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                         <div class="log_chat_area d-flex align-items-center">
                             <!--test form located at bottom-->
-                            <a href="#test-form" class="login popup-with-form">
+                            <a href="login.html" class="login">
                                 <i class="flaticon-user"></i>
                                 <span>log in</span>
                             </a>
@@ -90,13 +90,11 @@
 </div>
 <!-- banner_area_end -->
 
-<br>
-<br>
-<br>
-<!-- services -->
+<!-- register form -->
 
-<section id="services">
+
     <div class="container">
+        
        <div class="wrapper">
            <div class="form">
             <div class="input_field">
@@ -124,7 +122,11 @@
 
             <div class="input_field">
                 <label>Age</label>
-                <input type="text" class="input">
+                <div class="custom_select">
+                    <select id="ages">
+                        <option value=""></option>
+                    </select>
+                    </div>
             </div>
 
             <div class="input_field">
@@ -141,7 +143,7 @@
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <p>Agreed to terms and conditions</p>
+                <p>Agree to Terms and Conditions</p>
             </div>
 
             <div class="input_field">
@@ -152,9 +154,10 @@
        </div>
         
     </div>
-</section>
+  
 
-<!-- service section end -->
+
+<!-- register form section end -->
 
 
 
@@ -231,6 +234,7 @@
     window.onload = function () {
         //Reference the DropDownList.
         var ddlYears = document.getElementById("years");
+        var ddlAges = document.getElementById("ages");
  
         //Determine the Current Year.
         var currentYear = (new Date()).getFullYear();
@@ -242,6 +246,14 @@
             option.value = i;
             ddlYears.appendChild(option);
         }
+
+        //Loop to get Ages values to DropDownList
+        for (var i=10; i<=100; i++) {
+        var option = document.createElement("OPTION");
+        option.innerHTML = i;
+        option.value = i;
+        ddlAges.appendChild(option);
+}
     };
 </script>
 
