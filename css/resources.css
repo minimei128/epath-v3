@@ -926,6 +926,12 @@ a:hover,
 }
 
 
-.tt-badge.tt-color01 {
+.category-badge {
+    background-color: #88D498;
+    color: white;
+    padding: 3px;
+}
+
+.nav-item .active{
     background-color: #88D498;
 }

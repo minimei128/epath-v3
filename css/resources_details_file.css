@@ -17,5 +17,22 @@
     color: orange;
   }
 
+.text-subtitles{
+    font-size: 12px;
+}
 
+.stand-out-dl{
+    background-color: #88d498;
+    color: white !important;
+    padding: 2px !important;
+}
 
+.stand-out-rp{
+   
+    padding: 2px !important;
+}
+.stand-out-rp:hover{
+    background-color: red;
+    color: white !important;
+    padding: 2px !important;
+}

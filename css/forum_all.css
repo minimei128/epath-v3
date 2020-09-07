@@ -5291,9 +5291,6 @@ hr {
     fill: #2172cd;
 }
 
-.tt-icon-btn:hover.tt-hover-02 .tt-text {
-    color: #182730;
-}
 
 .tt-icon-btn:hover.tt-hover-02 .tt-icon svg {
     fill: #182730;
