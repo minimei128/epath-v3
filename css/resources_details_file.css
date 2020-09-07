@@ -1,0 +1,21 @@
+.info-top{
+    padding: 10px;
+    background-color:  #88d498;
+    color: white;
+}
+
+.rating-description{
+    width: 100%;
+}
+
+.colour-btn{
+    background-color:  #88d498;
+    color: white;
+}
+
+.checked {
+    color: orange;
+  }
+
+
+

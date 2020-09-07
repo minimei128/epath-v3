@@ -228,8 +228,8 @@
                     <hr></hr>
                         <h6 class="pt-title">Upload File</h6>
                         <div class="custom-file mb-3">
-                            <input type="file" class="custom-file-input" id="customFile" name="filename">
-                            <label class="custom-file-label" for="customFile">Choose file</label>
+                           
+    <input type="file" id="myFile" name="filename2">
                           </div>
                         <hr></hr>
                       </form>
@@ -269,12 +269,12 @@
                             </select>
                             </div>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 input_field">
                             <div class="form-group">
                                 <label for="inputTopicTags">Year</label>
-                                <select class="form-control">
-                                <option value="Select">Select</option>
-                                <option value="Value 01"> General Discussion</option>
+                                <select class="form-control" id="years">
+                                <option value="">Select</option>
+                               
                             </select>
                             </div>
                         </div>
@@ -369,6 +369,36 @@
       $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
     });
     </script>
+
+<!--This is for the year options for user to select-->
+
+<script type="text/javascript">
+
+    window.onload = function () {
+        //Reference the DropDownList.
+        var ddlYears = document.getElementById("years");
+        var ddlAges = document.getElementById("ages");
+ 
+        //Determine the Current Year.
+        var currentYear = (new Date()).getFullYear();
+ 
+        //Loop and add the Year values to DropDownList.
+        for (var i = 1950; i <= currentYear; i++) {
+            var option = document.createElement("OPTION");
+            option.innerHTML = i;
+            option.value = i;
+            ddlYears.appendChild(option);
+        }
+
+        //Loop to get Ages values to DropDownList
+        for (var i=10; i<=100; i++) {
+        var option = document.createElement("OPTION");
+        option.innerHTML = i;
+        option.value = i;
+        ddlAges.appendChild(option);
+}
+    };
+</script>
 
 <!-- JS here -->
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
