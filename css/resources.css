@@ -932,11 +932,15 @@ a:hover,
     padding: 3px;
 }
 
-.nav-item .active{
-    background-color: #88D498;
+
+.form-inline{
+   margin-left: 100px; 
 }
 
-.search-bar-section{
-    width: 50%;
-    margin-left: 60px;
+.searchbar-style{
+    margin-left: 10px;
 }
+
+.dropdown .dropdown-toggle::after { 
+    content: none; 
+} 

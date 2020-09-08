@@ -187,19 +187,79 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-
-                <button type="button" id="sidebarCollapse" class="btn btn-info">
-                    <i class="fas fa-align-left"></i>
+            
+                <div class ="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    
                     <span>Filter</span>
                 </button>
-                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-align-justify"></i>
-                </button>
 
-                <div class="search-bar-section">
-                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                   
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+                      <div class="form-group">
+
+                        
+                        <select class="form-control" id="sort-by-filter">
+                            <option value="Select">Select</option>
+                                <option value="Value 01">Post Date</option>
+                                <option value="Value 02">Rating</option>
+                                <option value="Value 03">Download</option>
+                                <option value="Value 04">Year</option>
+                            </select>
+                      </div>
+                      
+    
+                      <button type="submit" class="btn btn-primary">Filter</button>
+                  </div>
                 </div>
-                
+                <div class="search-bar-section">
+                    
+                    <form class="form-inline">
+                       
+                            <div class="form-group">
+                                <select class="form-control subject-combobox-style">
+                                <option value="Select">Subject</option>
+                                <option value="Value 01">English</option>
+                                <option value="Value 02">Mathematics</option>
+                                <option value="Value 03">Science</option>
+                                <option value="Value 04">History</option>
+                                <option value="Value 05">Geography</option>
+                                <option value="Value 06">Legal Studies</option>
+                                <option value="Value 07">Economic & Business</option>
+                                <option value="Value 08">Health & PE</option>
+                                <option value="Value 09">Society & Culture</option>
+                                <option value="Value 10">Studies of Religion</option>
+                                <option value="Value 11">Agriculture</option>
+                                <option value="Value 12">Community & Family Studies</option>
+                                <option value="Value 13">Information Processes & Technology</option>
+                                <option value="Value 14">Software Decision & Development</option>
+                                <option value="Value 15">Engineering Studies</option>
+                                <option value="Value 16">Industrial Technology</option>
+                                <option value="Value 17">Food Technology</option>
+                                <option value="Value 18">Design Technology</option>
+                                <option value="Value 19">Textiles & Design</option>
+                                <option value="Value 20">Drama</option>
+                                <option value="Value 21">Music</option>
+                                <option value="Value 22">Visual Arts</option>
+                                <option value="Value 23">French</option>
+                                <option value="Value 24">Japanese</option>
+                                <option value="Value 25">German</option>
+                                <option value="Value 26">Other Languages</option>
+
+                            </select>
+                            
+                       
+                        <input class="form-control searchbar-style" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Search</button>
+                      
+                    </div>
+                    </form>
+                </div>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav navbar-nav ml-auto">
@@ -213,7 +273,7 @@
                 </div>
             </div>
         </nav>
-   
+
         <section class="tt-inner-header">
             <div class="pagination left-header">
                 <a href="#">&laquo;</a>
