@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="css/forumStyle.css">
     <link rel="stylesheet" href="css/footer.css">
 
+     <!--css for sidebar-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/sidebarstyle.css">
+
 </head>
 
 <!-- header-start -->
@@ -89,6 +93,61 @@
 <main id="tt-pageContent">
     <div class="container">
 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+            
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                   
+                    <span>Filter</span>
+                </button>
+                
+
+                <div class="search-bar-section">
+                    
+                    <form class="form-inline">
+                       
+                            <div class="form-group">
+                                <select class="form-control subject-combobox-style">
+                                <option value="Select">Subject</option>
+                                <option value="Value 01">English</option>
+                                <option value="Value 02">Mathematics</option>
+                                <option value="Value 03">Science</option>
+                                <option value="Value 04">History</option>
+                                <option value="Value 05">Geography</option>
+                                <option value="Value 06">Legal Studies</option>
+                                <option value="Value 07">Economic & Business</option>
+                                <option value="Value 08">Health & PE</option>
+                                <option value="Value 09">Society & Culture</option>
+                                <option value="Value 10">Studies of Religion</option>
+                                <option value="Value 11">Agriculture</option>
+                                <option value="Value 12">Community & Family Studies</option>
+                                <option value="Value 13">Information Processes & Technology</option>
+                                <option value="Value 14">Software Decision & Development</option>
+                                <option value="Value 15">Engineering Studies</option>
+                                <option value="Value 16">Industrial Technology</option>
+                                <option value="Value 17">Food Technology</option>
+                                <option value="Value 18">Design Technology</option>
+                                <option value="Value 19">Textiles & Design</option>
+                                <option value="Value 20">Drama</option>
+                                <option value="Value 21">Music</option>
+                                <option value="Value 22">Visual Arts</option>
+                                <option value="Value 23">French</option>
+                                <option value="Value 24">Japanese</option>
+                                <option value="Value 25">German</option>
+                                <option value="Value 26">Other Languages</option>
+
+                            </select>
+                            
+                       
+                        <input class="form-control searchbar-style" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Search</button>
+                      
+                    </div>
+                    </form>
+                </div>
+
+            </div>
+        </nav>
         <div class="forum_title">
 
 

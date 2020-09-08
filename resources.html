@@ -188,35 +188,24 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
             
-                <div class ="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    
-                    <span>Filter</span>
+                
+                    <select class="custom-styling" id="sidebarCollapse">
+                        <option selected>Filter</option>
+                        <option value="1">Downloads</option>
+                        <option value="2">Posting Date</option>
+                        <option value="3">Ratings</option>
+                        <option value="3">Year</option>
+                        <option value="4">Notes</option>
+                        <option value="5">Questions</option>
+                        <option value="6">Reports</option>
+                      </select>
+             
+
+                
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-justify"></i>
                 </button>
 
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                   
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-                      <div class="form-group">
-
-                        
-                        <select class="form-control" id="sort-by-filter">
-                            <option value="Select">Select</option>
-                                <option value="Value 01">Post Date</option>
-                                <option value="Value 02">Rating</option>
-                                <option value="Value 03">Download</option>
-                                <option value="Value 04">Year</option>
-                            </select>
-                      </div>
-                      
-    
-                      <button type="submit" class="btn btn-primary">Filter</button>
-                  </div>
-                </div>
                 <div class="search-bar-section">
                     
                     <form class="form-inline">
@@ -329,7 +318,7 @@
                                     </div>
 
                                     <div class="tt-col-category"><span class="category-badge">Subject</span></div>
-                                    <div class="tt-col-category tt-col-value-large hide-mobile">AT</div>
+                                    <div class="tt-col-category tt-col-value-large hide-mobile">Questions</div>
                                     <div class="tt-col-category tt-col-value-large hide-mobile">4 <span class="fa fa-star checked"></span> </div>
                                     <div class="tt-col-category tt-col-value-large hide-mobile">10</div>
                                     <div class="tt-col-value-large hide-mobile">2020</div>

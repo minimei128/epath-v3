@@ -944,3 +944,10 @@ a:hover,
 .dropdown .dropdown-toggle::after { 
     content: none; 
 } 
+
+.custom-styling{
+    width: 130px;
+    background-color:lightblue;
+    color: white;
+    border: none;
+}

@@ -861,3 +861,11 @@ a:hover,
 .footer -menu li a:hover {
     text-decoration: none;
 }
+
+.form-inline{
+    margin-right: 200px; 
+ }
+ 
+ .searchbar-style{
+     margin-left: 10px;
+ }
