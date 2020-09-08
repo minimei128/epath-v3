@@ -935,3 +935,8 @@ a:hover,
 .nav-item .active{
     background-color: #88D498;
 }
+
+.search-bar-section{
+    width: 50%;
+    margin-left: 60px;
+}
