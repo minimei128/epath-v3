@@ -24,6 +24,10 @@
     <link rel="stylesheet" href="css/forum_thread.css">
     <link rel="stylesheet" href="css/footer.css">
 
+     <!--css for sidebar-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/sidebarstyle.css">
+
 </head>
 
 <!-- header-start -->
@@ -91,6 +95,36 @@
 
     <div class="container">
 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+            
+                
+                <select class="custom-styling" id="sidebarCollapse">
+                    <option selected>Filter</option>
+                    <option value="1">Likes</option>
+                    <option value="2">Replies</option>
+                    <option value="3">View</option>
+                    <option value="3">Activity</option>
+                  </select>
+
+                <div class="search-bar-section">
+                    
+                    <form class="form-inline">
+                       
+                            <div class="form-group">
+                               
+                            
+                       
+                        <input class="form-control searchbar-style" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Search</button>
+                      
+                    </div>
+                    </form>
+                </div>
+
+            </div>
+        </nav>
+
         <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="forums.html">Forum</a></li>
             <li class="breadcrumb-item"><a href="forums_thread.html" active>English</a></li>
@@ -100,12 +134,15 @@
             <div class="pagination left-header">
                 <a href="#">&laquo;</a>
                 <a href="#" class="active">1</a>
+
                 <a href="#">&raquo;</a>
             </div>
-            <div class="right header">
-                <a href="forum_create_thread.html"><span class="button button1">Post Thread</span></a>
+            <div class="right-header">
+                <a href="forum_create_thread.html"><span class="button">Create Thread</span></a>
             </div>
         </section>
+
+        
 
         <div class="forum_title">
 
@@ -118,6 +155,8 @@
 
         </div>
         <div class="tt-topic-list">
+
+            
             <div class="tt-list-header">
                 <div class="tt-col-topic">Topic</div>
                 <div class="tt-col-category ">Category</div>

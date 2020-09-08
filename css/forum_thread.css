@@ -14,6 +14,7 @@
     padding-left: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-top: 50px;
 }
 
 .tt-badge.tt-color01 {
@@ -57,7 +58,7 @@
     text-decoration: none;
     transition: background-color .3s;
     border: 1px solid #ddd;
-    margin: 0 4px;
+    margin-bottom: 20px;
 }
 
 .pagination a.active {
@@ -92,15 +93,14 @@
 
 .tt-inner-header {
     width: 100%;
+    padding: 10px;
 }
 
 .left-header {
-    width: 90%;
     float: left;
 }
 
 .right-header {
-    
     float: right;
 }
 
@@ -124,4 +124,11 @@ a:hover,
 
 .tt-list-header{
     border: 1px solid #ddd;;
+}
+
+.custom-styling{
+    width: 130px;
+    background-color:lightblue;
+    color: white;
+    border: none;
 }
