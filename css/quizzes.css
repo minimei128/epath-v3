@@ -1,0 +1,171 @@
+.quizClass h1 {
+    text-align: center;
+    color: black;
+}
+
+.quizClass p{
+    color: white;
+}
+.nextPrevBtn 
+{
+    
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    float:right;
+    background-color: #fff;
+    margin: 0 2px 0 2px;
+    cursor: pointer;
+}
+.nextPrevBtn a 
+{
+    text-decoration: none;
+    color:black;
+    line-height: 25px;
+}
+#quizContainer 
+{
+    width:50%;
+    margin: 150px auto;
+    padding: 50px 30px;
+    background-color: #1F9671;
+    border-radius:3px;
+    color: #fff;
+    box-shadow: 0 0 10px 0 rgb(209, 208, 208);
+}
+.quizClass ul 
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 500px;
+}
+.quizClass ul li
+{
+    background: #6ad49f;
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+    display: inline-block; 
+}
+#prev 
+{
+    display:none;
+}
+#start 
+{
+    display:none;
+    width: 100px;
+}
+input[type="radio"]{
+    cursor: pointer;
+}
+
+
+a:focus,
+.button:focus,
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+    text-decoration: none;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #88d498;
+    color: white;
+    border: 1px solid #88d498;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.tt-inner-header {
+    width: 100%;
+    padding: 10px;
+}
+
+.left-header {
+    float: left;
+}
+
+.right-header {
+    float: right;
+}
+
+
+.button {
+    background-color: orange;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.category-badge {
+    background-color: #88D498;
+    color: white;
+    padding: 3px;
+}
+
+
+.form-inline{
+   margin-left: 100px; 
+}
+
+.searchbar-style{
+    margin-left: 10px;
+}
+
+.dropdown .dropdown-toggle::after { 
+    content: none; 
+} 
+
+.custom-styling{
+    width: 130px;
+    background-color:lightblue;
+    color: white;
+    border: none;
+}
+
+.nav{
+    display: inline-flex;
+    float: right !important;
+}
