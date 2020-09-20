@@ -169,3 +169,151 @@ a:hover,
     display: inline-flex;
     float: right !important;
 }
+
+.quizStyle body {
+    background-color:#1F9671;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+}
+
+.quizStyle p,h1, h2, a, span, label {
+    color: black;
+}
+
+#score-list {
+    font-size: 1.2rem;
+    color: black;    
+}
+
+.quizStyle ol {
+    list-style: none;
+    counter-reset: li;
+}
+
+.quizStyle li {
+    counter-increment: li;
+
+}
+
+.quizStyle li::before {
+    content: "." counter(li);
+    color: black;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1.5rem;
+    margin-right: 0.5rem;
+    text-align: right;
+    direction: rtl;
+}
+
+.quizStyle hr {
+    height: 2px;
+    background-color: black;
+}
+
+#scoresTitle {
+    padding-left: 1rem;
+}
+
+.text-color{
+    background-color: orange;
+    color: white;
+}
+
+.login_white{
+    color: white !important;
+}
+
+.p-3{
+    background-color: #88D498;
+    color: white;
+    box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.125);
+}
+
+.quiz-background{
+    background-color: white;
+    box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.125);
+
+}
+
+.highscore-background{
+    background-color: white;
+    box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.125);
+  
+}
+
+.highscore-background2{
+    background-color: white;
+    box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.125);
+    align-items: center;
+    padding-top: 0;
+    height: auto;
+
+}
+
+.finish_text{
+    color:  #88D498;
+    text-decoration: underline;
+
+}
+
+.completed_icon{
+    width: 40px;
+    height: 40px;
+}
+
+.tt-inner-header{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.score-background{
+
+    color: white;
+}
+
+.highscore-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline #88D498;
+    margin-bottom: 50px;
+}
+
+#scoresTitle{
+    color: #88D498;
+}
+
+.trophy-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.score-background li{
+    border-bottom: 1px grey solid;
+}
+
+.result-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline #88D498;
+    margin-bottom: 50px;
+}
+
+.word-center{
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

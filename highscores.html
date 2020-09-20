@@ -23,9 +23,10 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/forumStyle.css">
     <link rel="stylesheet" href="css/quizzes.css">
     <link rel="stylesheet" href="css/footer.css">
-   
+    
 
      <!--For quiZ-->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -33,6 +34,11 @@
     <!--css for sidebar-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="css/sidebarstyle.css">
+ 
+     <!-- Font Awesome JS -->
+     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+ 
 
 </head>
 
@@ -76,7 +82,7 @@
                             <!--test form located at bottom-->
                             <a href="login.html" class="login">
                                 <i class="flaticon-user"></i>
-                                <span class="login_white">log in</span>
+                                <span class= "login_white">log in</span>
                             </a>
                         </div>
                     </div>
@@ -94,8 +100,6 @@
 <div class="banner_area banner_bg">
     <h3>Quizzes</h3>
 </div>
-<!-- banner_area_end -->
-
 <!-- banner_area_end -->
 <div class="wrapper">
     <!-- Sidebar  -->
@@ -191,95 +195,47 @@
             
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav nav-tabs ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link active" data-toggle="tab" href="#tt-tab-01">Years 11 - 12</a>
-                        </li>
-                        
-                        
-                    </ul>
+                     <a class="btn btn-info" href="quizzes.html">Quiz Page</a>
                 </div>
             </div>
         </nav>
-        
-        <main id="tt-pageContent" class="tt-offset-small">
-            
-                
-                    <div class="tab-content">
 
-                        
-                        <div class="tab-pane in active" id="tt-tab-01" role="tabpanel">
-                            <div id="content">
-                    
-                                <body class="quiz_Style">
-                                    <header class="p-3">
-                                        <a href="highscores.html">View High Scores</a>
-                                        <span id="timer" class="float-right mr-2">Time: 0</span>
-                                    </header>
-                                    
-                                    <!-- Home Screen -->
-                                    <div class="container mt-5 quiz-background" id="home">
-                                        <div class="row justify-content-center mt-5 pt-3 pb-3">
-                                            <div class="col-10 col-lg-8 text-center quizStyle">
-                                                <h1>English</h1> <br>
-                                            <p>Try to answer the following 20 questions in 90 seconds. <br>
-                                                <strong>NOTE:</strong> If you answer incorrectly, you'll lose some time (10 seconds to be exact)! </p><br>
-                                                <button type="button" id="startBtn" class="btn btn-info btn-lg">START</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- Q&A -->
-                                    <div class="container mt-5 d-none quiz-background" id="quiz">
-                                        <div class="row justify-content-center mt-5 pt-3 pb-3">
-                                            <div class="col-10 col-lg-8 quizStyle" id="QA-block">
-                                                <h3 id="questions" class="mb-4">Question</h3>
-                                                <ul id="answers" class="list-unstyled">
-                                                    <li class="answerChoice">A) </li>
-                                                    <li class="answerChoice">B) </li>
-                                                    <li class="answerChoice">C) </li>
-                                                    <li class="answerChoice">D) </li>
-                                                </ul>
-                                                <p class="feedback"></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- Finished Screen -->
-                                    <div class="container mt-5 d-none highscore-background" id="submit-score">
-                                        <div class="row justify-content-center mt-5 pt-3 pb-3">
-                                            <div class="col-10 col-lg-8 quizStyle">
-                                                <div class="result-header">
-                                                <h1 class="finish_text">Completed</h1> 
-                                                <!-- Icons made by <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
-                                               <img class ="completed_icon" src="/img/quiz/checked.png">
-                                                </div>
-                                                
-                                                <p class="word-center"id="user-score"> </p>
-                                               
-                                                <form class="form-group quizStyle">
-                                                    <label for="new-score"> Enter your name: </label>
-                                                    <input type="text" id="userName"> 
-                                                    <button type="button" class="btn btn-info btn-sm submitBtn">Submit</button>
-                                                </form>
-                                           
-                                            </div>
-                                        </div>
-                                    </div>
+
+        
+    
+            
+            
+                <header class="p-3 p3">
+                    <h5 class="word-center">Beat these high scores</h5>
+                    <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+                    <img class="trophy-icon" src="/img/quiz/boxing-gloves.png">
+                </header>
+                <div class="container mt-5 highscore-background2">
+                    <div class="row justify-content-center mt-5 pt-3 pb-3 quizStyle" >
+                        <div class="col-10 col-lg-8" >
+                            <div class="highscore-header">
+                            <h1 id="scoresTitle">High Scores</h1> 
+                            <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+                            <img class="trophy-icon" src="/img/quiz/trophy.png"></div>
                             
-                                </body>
-                                
-                            </div>
+                            <ol id='score-list' class="mb-4 score-background"></ol>
+                            <button type="button" class="btn btn-info restartBtn">Restart</button>
+                            <!-- <button type="button" class="btn btn-info btn-sm clearBtn">Clear Scores</button> -->
                         </div>
-        
-
-                        
-
-
                     </div>
+                </div>
                 
             
-        </main>
+        
+                        
+        
+                        <!-- course tab -->
+        
+                    
+                    
+                
+            
+        
 
 </div>
     </div>
@@ -400,8 +356,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="./quiz/questions.js"></script>
-<script src="./quiz/main.js"></script>
+<script src="./quiz/scores.js"></script>
 
 </body>
 
