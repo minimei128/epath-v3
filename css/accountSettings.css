@@ -1,0 +1,223 @@
+
+.wrapper_inner{
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.125);
+}
+
+.wrapper_inner .form{
+    width: 100%;
+}
+
+.wrapper_inner .form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper_inner .form .info-display{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper_inner .form .input_field label{
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.wrapper_inner .form .info-display label{
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.wrapper_inner .form .input_field .input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.wrapper_inner .form .info-display .input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    pointer-events: none;
+   
+}
+
+.wrapper_inner .form .input_field .custom_select{
+    position: relative;
+    width: 100%;
+    height:37px;
+}
+
+.wrapper_inner .form .input_field .custom_select select{
+    -webkit-appearance: none;
+    appearance: none;
+    border:1px solid #d5dbd9;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: none;
+
+}
+
+.wrapper_inner .form .input_field .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent ;
+    pointer-events: none;
+}
+
+.wrapper_inner .form .input_field .input:focus,
+.wrapper_inner .form .input_field select:focus{
+    border: 1px solid #fec107;
+
+}
+
+.wrapper_inner .form .input_field p{
+    font-size: 14px;
+    color: #757575;
+}
+
+.wrapper_inner .form .input_field .check{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.wrapper_inner .form .input_field .check input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.wrapper_inner .form .input_field .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fec107;
+    display: block;
+    position: relative;
+}
+
+.wrapper_inner .form .input_field .check .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 10px;
+    height: 5px;
+    border: 2px solid;
+    border-color: transparent transparent #fff #fff ;
+    transform: rotate(-45deg);
+    display: none;
+}
+
+.wrapper_inner .form .input_field .check input[type="checkbox"]:checked ~ .checkmark{
+    background: #fec107;
+}
+
+.wrapper_inner .form .input_field .check input[type="checkbox"]:checked ~ 
+.checkmark:before{
+    display:block;
+}
+
+.wrapper_inner .form .input_field .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #fec107;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+.wrapper_inner .form .input_field:last-child{
+    margin-bottom: 0;
+}
+
+.wrapper_inner .form .input_field .btn:hover{
+    background: #ffd658;
+}
+
+.register_style{
+    text-align: center;
+}
+
+.wrapper_inner .form .sign-up-prompt a{
+    color:orange;
+}
+
+.wrapper_inner .form .input_field p{
+    font-weight: bold;
+}
+
+.accountTitle{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.float-left{
+    margin-left: 40px;
+}
+
+#imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{
+    cursor: pointer;
+}
+
+#profile-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#profile-container img {
+    width: 150px;
+    height: 150px;
+}
+@media (max-width: 420px){
+    .wrapper_inner .form .input_field{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .wrapper_inner .form .input_field label{
+        margin-bottom:5px;
+    }
+    .wrapper_inner .form .input_field.terms{
+        flex-direction: row ;
+    }
+}

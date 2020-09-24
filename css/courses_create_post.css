@@ -1,0 +1,16 @@
+.col-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.tt-wrapper-inner{
+    padding-bottom: 50px;
+}
+
+.addCourseBtn{
+    margin-top: 20px;
+    margin-left: 13px;
+    float: left;
+}
