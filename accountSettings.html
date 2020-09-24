@@ -23,16 +23,10 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/forum_all.css">
-    <link rel="stylesheet" href="css/resources.css">
+
     <link rel="stylesheet" href="css/accountSettings.css">
     <link rel="stylesheet" href="css/footer.css">
    
-
-     <!--For quiZ-->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <!--css for sidebar-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="css/sidebarstyle.css">
@@ -131,7 +125,9 @@
             <li >
                 <a href="accountSettings.html">Account Settings</a>
             </li>
-            
+            <li >
+                <a href="index.html">Logout</a>
+            </li>
             
         </ul>
 
@@ -148,10 +144,12 @@
 
     <div class="wrapper_inner">
         <div id="profile-container">
-            <image id="profileImage" src="http://lorempixel.com/100/100" />
+            <image id="profileImage" src="img/profile/avatar_placeholder.png" />
          </div>
+         <div id="file-upload">
          <input id="imageUpload" type="file" 
                 name="profile_photo" placeholder="Photo" required="" capture>
+         </div>
         </div>
     <h3 class="accountTitle">Account Details</h3>
 
@@ -391,9 +389,9 @@
 </script>
 
 <!-- This is for upload profile picture -->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
-$("#profileImage").click(function(e) {
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    $("#profileImage").click(function(e) {
     $("#imageUpload").click();
 });
 
@@ -408,6 +406,8 @@ $("#imageUpload").change(function(){
     fasterPreview( this );
 });
 </script>
+
+
 <!-- JS here -->
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="js/vendor/jquery-1.12.4.min.js"></script>

@@ -14,3 +14,22 @@
     margin-left: 13px;
     float: left;
 }
+
+#profileImage
+{
+    cursor: pointer;
+}
+
+#profile-container {
+    width: 300px;
+    
+    
+   
+}
+
+#profile-container img {
+    width: 200px;
+    height: 200px;
+    
+}
+

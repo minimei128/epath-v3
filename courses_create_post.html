@@ -127,6 +127,9 @@
             <li >
                 <a href="accountSettings.html">Account Settings</a>
             </li>
+            <li >
+                <a href="index.html">Logout</a>
+            </li>
             
             
         </ul>
@@ -203,10 +206,13 @@
                             <div class="form-group">
                             <hr>
                             <label for="inputTopicTitle">Course Image (510px x 352px)</label>
-                            <div class="custom-file mb-3">
-                               
-        <input type="file" id="myFile" name="filename2">
-                              </div>
+                            <div id="profile-container">
+                                <image id="profileImage" src="img/profile/image_placeholder.png" />
+                             </div>
+                             <div id="file-upload">
+                             <input id="imageUpload" type="file" 
+                                    name="profile_photo" placeholder="Photo" required="" capture>
+                             </div>
                             
                               
                             <hr></hr>
@@ -468,6 +474,25 @@
 
 <!-- footer -->
 <!-- link that opens popup -->
+
+<!-- This is for upload profile picture -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    $("#profileImage").click(function(e) {
+    $("#imageUpload").click();
+});
+
+function fasterPreview( uploader ) {
+    if ( uploader.files && uploader.files[0] ){
+          $('#profileImage').attr('src', 
+             window.URL.createObjectURL(uploader.files[0]) );
+    }
+}
+
+$("#imageUpload").change(function(){
+    fasterPreview( this );
+});
+</script>
 
 <!-- This is the for the file name to appear when user selects it -->
 <script>

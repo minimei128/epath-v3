@@ -184,10 +184,7 @@
     margin-left: 40px;
 }
 
-#imageUpload
-{
-    display: none;
-}
+
 
 #profileImage
 {
@@ -203,11 +200,19 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
+    margin-left: 150px;
+   
 }
 
 #profile-container img {
     width: 150px;
     height: 150px;
+    
+}
+
+#file-upload{
+    margin-top: 20px;
+    margin-left: 130px;
 }
 @media (max-width: 420px){
     .wrapper_inner .form .input_field{
