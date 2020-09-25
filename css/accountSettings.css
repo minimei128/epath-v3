@@ -200,7 +200,7 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    margin-left: 150px;
+    margin-left: 250px;
    
 }
 
@@ -212,7 +212,7 @@
 
 #file-upload{
     margin-top: 20px;
-    margin-left: 130px;
+    margin-left: 220px;
 }
 @media (max-width: 420px){
     .wrapper_inner .form .input_field{
