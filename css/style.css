@@ -6676,6 +6676,13 @@ h6 {
 
 /*# sourceMappingURL=style.css.map */
 
+.accordion-section{
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.panel-title{
+  color: grey;
+}
 .accordion-section .panel-default > .panel-heading {
   border: 0;
   background: #f4f4f4;
@@ -6684,16 +6691,21 @@ h6 {
 .accordion-section .panel-default .panel-title a {
   display: block;
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 16px;
 }
+
+.panel a:hover{
+  color: orange;
+}
+
 .accordion-section .panel-default .panel-title a:after {
   font-family: 'FontAwesome';
   font-style: normal;
-  font-size: 3rem;
+  font-size: 20px;
   content: "\f106";
-  color: #1f7de2;
+  color: black;
   float: right;
-  margin-top: -12px;
+  margin-top: 3px;
 }
 .accordion-section .panel-default .panel-title a.collapsed:after {
   content: "\f107";
